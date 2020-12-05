@@ -1,0 +1,28 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'Todolist/style.css' %}">
+
+<body>
+
+
+  <section>
+
+  <h1>TODOLIST</h1><br>
+
+  <ul>
+      {% for todo_item in all_items %}
+          <li>{{ todo_item.content }}
+            <form action="/deleteTodo/{{todo_item.id}}/"
+                  style="display: inline;"
+
+                  method="post">{% csrf_token %}
+                <input type="submit" value="supprimer"/>
+            </form>
+          </li>
+      {% endfor %}
+  <br></ul>
+  <form action="/addTodo/" method="POST">{% csrf_token %}
+      <input type="text" name="content" placeholder="Add New Todo"/>
+      <input type="submit" value="ajouter"/>
+  </form>
+  </section>
+</body>

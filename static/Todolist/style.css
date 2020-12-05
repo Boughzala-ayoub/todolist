@@ -1,0 +1,67 @@
+
+h1{
+  color: black;
+  text-align: center;
+  font-size: 200%;
+  font-family:verdana;
+
+
+}
+
+section{
+  background-color: rgb(0, 153, 204);
+  margin: auto;
+  max-height: 450px;
+  height: 100%;
+  width: 45%;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  overflow: auto;
+  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+
+}
+ul{
+  list-style: none;
+;
+}
+html{
+  background: white url("https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat;
+  background-size: cover;
+}
+form{
+  border: 50px green;
+}
+input[type=submit] {
+  appearance: button;
+  text-align: inherit;
+  color: black;
+  font-size: 100% important;
+  display: inline-block;
+  padding: 5px 5px;
+  width: 15%;
+  background-color: #C0D6D2;
+  border: 3px solid black;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+input[type=submit]:hover {
+  background-color: gray; /* Green */
+  color: white;
+}
+form.input[type=submit]{
+  left: 25%;
+
+}
+li{
+  font-size: 150%;
+  font-weight: bold;
+  font-family:verdana;
+}
